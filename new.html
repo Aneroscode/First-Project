@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+  <div class="absolute mx-10">
+
+    <header class="flex justify-between  px-20 py-7 ">
+      <div class="flex" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+        <img class="relative -top-3 w-12" src="/images/logo work.jpg" alt="">
+        <a class="font-bold text-lg" href="new.html">RoyalButter</a>
+      </div>
+
+      <div class="relative" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
+        <a href="cart.html"><box-icon class="w-20 h-8" name='cart'></box-icon></a>
+        <small id="cart-count" class="bg-yellow-400 rounded-full text-sm font-bold text-black absolute w-4 h-4 top-0 right-5 items-center pl-1 pb-5">0</small>
+      </div>
+    </header>
+
+    <main class="py-12 ">
+      <div class=" flex flex-col gap-3 items-center">
+        <h1 class="font-bold text-2xl mb-4" data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500"
+                                            > Luxury In Every Touch</h1>
+
+        <p class="text-gray-500 w-1/2 text-xl text-center font-medium "
+                                            data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500"
+        > Royal Butter offers luxurious skincare products crafted from 100% natural, sustainably sourced shea butter, aiming to nourish, rejuvenate, and transform skin, providing an opulent journey towards healthier, radiant skin. </p>
+
+        <div class="bg-transparent py-10  mx-28">
+          <img class="w-full " data-aos="zoom-in-up "
+                                data-aos-easing="linear"
+                                data-aos-duration="3000"
+           src="../images/Frame 6 woman.jpg">
+        </div>
+      </div>
+
+    </main>
+
+    <section class="cart-items1">
+      <div>
+        <h2 class="font-bold text-center text-4xl mb-10" data-aos="fade-up"
+                                                          data-aos-easing="linear"
+                                                          data-aos-duration="1000"
+        >Products</h2>
+      </div>
+
+      <div class="cart-row flex space-x-4  pt-10 px-10 ">
+
+       <div class=" w-1/2 mx-20 " data-aos="fade-right"
+                                  data-aos-easing="linear"
+                                  data-aos-duration="1500"
+       > <img class="cart-img"   src="/images/Frame 7 creame.jpg"> </div>
+
+        <div class="flex flex-col  leading-7 justify-between w-1/2 " data-aos="fade-left"
+                                                                      data-aos-easing="linear"
+                                                                      data-aos-duration="1500"
+        >
+          <h2 class="shop-title font-bold text-2xl pb-7 ">Luxury In Every Touch 1</h2> 
+          <p class="font-medium text-gray-500 text-xl text-pretty ">
+            Royal Butter offers luxurious skincare products crafted from 100% natural, sustainably sourced shea butter, aiming to nourish, rejuvenate, and transform skin, providing an opulent journey towards healthier, radiant skin.
+          </p> 
+
+          <p class="item-price font-semibold text-xl mt-5 text-gray-500"> 
+             200.00 
+          </p>
+        
+
+          <div class="mt-5">
+            <button class="minusEl px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="sub('-')">-</button>
+            <span id="numEl1" class="NumQty px-6 py-2 text-2xl font-bold">0</span>
+            <button class="addEl px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="add('+')">+</button>
+            <button class="statusEl px-8 py-2 bg-slate-200 rounded-lg ml-6 text-xl font-bold hover:bg-slate-300" onclick="addUp()">Add to cart</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cart-row  flex flex-row-reverse space-x-20  pt-10 px-10 mt-32 ">
+        <div class=" w-1/2 mx-20" data-aos="fade-right"
+                                  data-aos-easing="linear"
+                                  data-aos-duration="1500"
+        > <img class="cart-img"   src="/images/Frame 7 (1) box.jpg"> </div>
+          <div class="flex flex-col  leading-7 justify-between w-1/2 " data-aos="fade-left"
+                                                                        data-aos-easing="linear"
+                                                                        data-aos-duration="1500"
+>
+            <h2 class="shop-title font-bold text-2xl pb-7 ">Luxury In Every Touch 2</h2> 
+            <p class="font-medium text-gray-500 text-xl text-pretty ">
+              Royal Butter offers luxurious skincare products crafted from 100% natural, sustainably sourced shea butter, aiming to nourish, rejuvenate, and transform skin, providing an opulent journey towards healthier, radiant skin.
+            </p> 
+  
+            <p class="item-price font-semibold text-xl mt-5 text-gray-500"> 
+               100.00 
+            </p>
+          
+  
+            <div class="mt-5">
+              <button class="minusEL px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="sub2('-')">-</button>
+              <span id="numEl2" class="NumQty px-6 py-2 text-2xl font-bold">0</span>
+              <button class="addEl px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="add2('+')">+</button>
+              <button class="statusEl px-8 py-2 bg-slate-200 rounded-lg ml-6 text-xl font-bold hover:bg-slate-300">Add to cart</button>
+            </div>
+          </div>
+
+       </div>
+
+        <div class="cart-row flex pt-10 px-10 mt-32 ">
+
+          <div class=" w-1/2 mx-20 " data-aos="fade-right"
+                                      data-aos-easing="linear"
+                                      data-aos-duration="1500"
+          > <img class="cart-img"   src="/images/Frame 7 (2).jpg"> </div>
+  
+          <div class="flex flex-col  leading-7 justify-between w-1/2 " data-aos="fade-left"
+                                                                        data-aos-easing="linear"
+                                                                        data-aos-duration="1500"
+>>
+            <h2 class="shop-title font-bold text-2xl pb-7 ">Luxury In Every Touch 3</h2> 
+            <p class="font-medium text-gray-500 text-xl text-pretty ">
+              Royal Butter offers luxurious skincare products crafted from 100% natural, sustainably sourced shea butter, aiming to nourish, rejuvenate, and transform skin, providing an opulent journey towards healthier, radiant skin.
+            </p> 
+  
+            <p class="item-price font-semibold text-xl mt-5 text-gray-500"> 
+               300.00 
+            </p>
+          
+  
+            <div class="mt-5">
+              <button class="minusEl px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="sub3('-')">-</button>
+              <span id="numEl3" class="NumQty px-6 py-2 text-2xl font-bold">0</span>
+              <button class="addEl px-6 py-2 bg-slate-200 rounded-lg text-2xl font-bold hover:bg-slate-300" onclick="add3('+')">+</button>
+              <button class="statusEl px-8 py-2 bg-slate-200 rounded-lg ml-6 text-xl font-bold hover:bg-slate-300">Add to cart</button>
+            </div>
+          </div>
+  
+        </div>
+
+          <div class="mt-32 ">
+            <div class="flex flex-col items-center justify-center bg-[#FFCA42] pt-10 rounded-xl mx-28 " data-aos="flip-right"
+                                                                                                          data-aos-easing="linear"
+                                                                                                          data-aos-duration="1500"
+            >
+              <h1 class="text-4xl font-bold"  data-aos="fade-right"
+                                              data-aos-easing="linear"
+                                              data-aos-duration="1500"
+              >Get in touch</h1>
+              <p class="font-semibold text-xl" data-aos="fade-left"
+                                                data-aos-easing="linear"
+                                                data-aos-duration="1500"
+              >Do you want to make any enquiries?</p>
+              <a href="contact.html" class="px-8 py-2 bg-black text-white rounded-l mt-5 mb-10 transition-all duration-500 hover:translate-y-1.5" data-aos="flip-up"
+                                                                                                                                                      data-aos-easing="linear"
+                                                                                                                                                      data-aos-duration="1500"
+              >Contact us</a>
+            </div>
+          </div>
+
+    </section>
+
+    <footer class="mt-32">
+      <div>
+      </div>
+
+      <hr class="border-gray-300 mb-10">
+
+      <div class="flex justify-between px-28 pb-10">
+        <div class="flex">
+          <img class="relative -top-2 w-10" src="/images/logo work.jpg">
+          <h2 class="text-lg font-medium">RoyalButter</h2>
+        </div>
+
+        <div>
+          <span class="font-semibold"> &copy2023 techUp studios</span>
+        </div>
+
+        <div >
+          <box-icon class="bg-slate-300 rounded-full" type='logo' name='facebook'></box-icon>
+          <box-icon class="bg-slate-300 rounded-full" type='logo' name='instagram-alt'></box-icon>
+        </div>
+      </div>
+      
+    </footer>
+  </div>
+
+
+  <script src="new.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

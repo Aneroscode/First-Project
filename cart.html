@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CART</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    
+    <header class="flex justify-between  px-20 py-7">
+      <div class="flex ">
+        <img class="relative -top-3 w-12" src="/images/logo work.jpg" alt="">
+        <a class="font-bold text-lg" href="new.html">RoyalButter</a>
+      </div>
+
+      <div class="relative">
+        <a href=""><box-icon class="w-20 h-8" name='cart'></box-icon></a>
+        <small id="cart-count" class="bg-yellow-400 rounded-full text-sm font-bold text-black absolute w-4 h-4 top-0 right-5 items-center pl-1 pb-5">0</small>
+      </div>
+    </header>
+
+    <main class="items-update">
+      <h1 class="font-bold text-3xl px-24 pt-14 ">My Cart</h1>
+
+      <div class="cart-update flex px-24 pt-28 justify-between items-center">
+        <div class="flex justify-between items-center" >
+          <img class=" update-img w-52 " src="/images/Frame 7 creame.jpg">
+          <h2 class="font-bold text-lg pl-8"> Luxury In Every Touch</h2>
+        </div>
+
+
+        <div>
+          
+          <span class="cart-quantity py-1 px-4  font-bold text-xl">4</span>
+          
+        </div>
+
+
+        <div class="cart-update flex items-center justify-between">
+          <div class="mr-10">
+          <p class="font-normal text-xl pb-3">Price</p>
+          <span class="cart-price font-bold text-slate-400 text-xl"> 200.00</span>
+          </div>
+          <span class="removeCart font-light text-3xl pb-5 cursor-pointer">x</span>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 mt-8">
+
+
+      <div class="cart-update flex px-24 pt-28 justify-between items-center">
+        <div class="flex justify-between items-center" >
+          <img class="update-img w-52" src="/images/Frame 7 (1) box.jpg">
+          <h2 class="font-bold text-lg pl-8"> Luxury In Every Touch</h2>
+        </div>
+
+
+        <div>
+          
+          <span class="cart-quantity py-1 px-4  font-bold text-xl">1</span>
+          
+        </div>
+
+
+        <div class="flex items-center justify-between">
+          <div class="mr-10">
+          <p class="font-normal text-xl pb-3">Price</p>
+          <span class="cart-price font-bold text-slate-400 text-xl"> 100.00</span>
+          </div>
+          <span class="removeCart font-light text-3xl pb-5 cursor-pointer">x</span>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 mt-8">
+
+
+      <div class="cart-update flex px-24 pt-28 justify-between items-center">
+        <div class="flex justify-between items-center" >
+          <img class="update-img w-52" src="/images/Frame 7 (2).jpg">
+          <h2 class="font-bold text-lg pl-8"> Luxury In Every Touch</h2>
+        </div>
+
+
+        <div>
+          
+          <span class="cart-quantity py-1 px-4  font-bold text-xl">2</span>
+          
+        </div>
+
+
+        <div class="flex items-center justify-between">
+          <div class="mr-10">
+          <p class="font-normal text-xl pb-3">Price</p>
+          <span class="cart-price font-bold text-slate-400 text-xl"> 300.00</span>
+          </div>
+          <span class="removeCart font-light text-3xl pb-5 cursor-pointer">x</span>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 mt-8">
+
+
+      <div class="flex flex-col items-end px-24 pt-20 ">
+
+        <div class="flex">
+          <p class="font-semibold text-xl pr-16">Shipping:</p>
+          <p class="font-semibold text-xl">Calculated at checkpoint</p>
+        </div>
+
+
+        <div class="flex pt-7" > 
+          <p class="font-semibold text-xl pr-28" >Tax:</p>
+          <p class="font-semibold text-xl">Calculated at checkpoint</p>
+        </div>
+
+        <div class="flex pt-7">
+          <P class="font-bold text-xl pr-52">Total (GHS):</P>
+          <p class="cart-total font-semibold text-xl ">GHS 0</p>
+        </div>
+        <button class="mt-8 font-medium py-3 px-7 bg-black text-white rounded-xl text-lg transition-all duration-500 hover:translate-y-3">checkout</button>
+      </div>
+
+    </main>
+
+    <footer>
+
+      <hr class="border-gray-300 mb-10 mt-10">
+
+      <div class="flex justify-between px-28 pb-10">
+        <div class="flex">
+          <img class="update-img relative -top-2 w-10" src="/images/logo work.jpg">
+          <h2 class="text-lg font-medium">RoyalButter</h2>
+        </div>
+
+        <div>
+          <span class="font-semibold"> &copy2023 techUp studios</span>
+        </div>
+
+        <div >
+          <box-icon class="bg-slate-300 rounded-full" type='logo' name='facebook'></box-icon>
+          <box-icon class="bg-slate-300 rounded-full" type='logo' name='instagram-alt'></box-icon>
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="new.js"></script
+  </body>
+</html>
